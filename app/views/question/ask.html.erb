@@ -1,7 +1,14 @@
 <h1>Question#ask</h1>
-<p>Find me in app/views/question/ask.html.erb</p>
 
-<form action="/answer" method="get">
-  <input type="text" id="question" placeholder="Your question" name="question">
-  <input type="submit" value="Submit, Yo!">
-</form>
+<div class="container">
+  <div class="question">
+    <form action="/answer" method="get">
+      <div class="form-group">
+        <label for="question"> Put your question here</label>
+        <input type="text" placeholder="Your question" name="question" class="form-control">
+      </div>
+      <!-- <input type="submit" value="Submit, Yo!"> -->
+      <button type="submit" class="btn btn-primary">Submit, Yo!</button>
+    </form>
+  </div>
+</div>
